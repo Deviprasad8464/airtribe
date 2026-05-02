@@ -11,7 +11,17 @@ public class Doctor extends Person {
         this.specialization=specialization;
         this.fee=fee;
     }
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setFee(double fee) {
+        this.fee = fee;
+    }
     public Specialization getSpecialization(){ return specialization;}
     public double getFee(){ return fee;}
 }

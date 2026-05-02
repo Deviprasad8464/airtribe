@@ -9,6 +9,14 @@ public class Patient extends Person implements Cloneable {
         super(id,name,age);
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     @Override
     public Patient clone(){
         return new Patient(id,name,age);

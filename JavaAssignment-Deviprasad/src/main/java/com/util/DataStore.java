@@ -13,4 +13,8 @@ public class DataStore<T> {
     public T get(int id){ return map.get(id);}
 
     public List<T> getAll(){ return new ArrayList<>(map.values());}
+
+    public void remove(int id) {
+        map.remove(id);
+    }
 }
